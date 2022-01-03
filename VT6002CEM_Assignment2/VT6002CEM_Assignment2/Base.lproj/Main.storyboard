@@ -86,7 +86,7 @@
         <scene sceneID="Pxs-By-arX">
             <objects>
                 <viewController id="tbA-1D-xIC" customClass="MilkTeaMapViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
-                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="hKT-j3-nag">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="hybridFlyover" showsUserLocation="YES" id="hKT-j3-nag">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
