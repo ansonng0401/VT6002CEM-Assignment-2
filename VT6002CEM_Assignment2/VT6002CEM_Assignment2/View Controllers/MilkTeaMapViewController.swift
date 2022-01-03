@@ -20,12 +20,12 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         if CLLocationManager.locationServicesEnabled() {
          self.locationManager = CLLocationManager();
          self.locationManager?.delegate = self;
-         if CLLocationManager.authorizationStatus() != .authorizedAlways {
-         self.locationManager?.requestAlwaysAuthorization();
-         }
-         else {
-         self.setupAndStartLocationManager();
-         }
+//         if CLLocationManager.authorizationStatus() != .authorizedAlways {
+//         self.locationManager?.requestAlwaysAuthorization();
+//         }
+//         else {
+//         self.setupAndStartLocationManager();
+//         }
          }
         
         let MilkTeaAnnotation = MKPointAnnotation();

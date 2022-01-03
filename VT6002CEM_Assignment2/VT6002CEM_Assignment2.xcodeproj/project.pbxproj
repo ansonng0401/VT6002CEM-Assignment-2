@@ -10,7 +10,6 @@
 		3E218A66278305890092EA20 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A65278305890092EA20 /* WebViewController.swift */; };
 		3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */; };
 		3E327032278365700067F264 /* Helpers in Resources */ = {isa = PBXBuildFile; fileRef = 3E327031278365700067F264 /* Helpers */; };
-		3E327036278365D30067F264 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E327035278365D30067F264 /* Constants.swift */; };
 		3E5CA1982783535D00BE9913 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1972783535D00BE9913 /* SignUpViewController.swift */; };
 		3E5CA19A2783537100BE9913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1992783537100BE9913 /* LoginViewController.swift */; };
 		3E5CA19D278353A200BE9913 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA19C278353A200BE9913 /* MainPageViewController.swift */; };
@@ -42,6 +41,7 @@
 		3E72A58F27836B7800F55E19 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3E72A58E27836B7800F55E19 /* FirebaseStorage */; };
 		3E72A59127836B7800F55E19 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 3E72A59027836B7800F55E19 /* FirebaseStorageCombine-Community */; };
 		3E72A59327836B7800F55E19 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3E72A59227836B7800F55E19 /* FirebaseStorageSwift-Beta */; };
+		3E72A5952783863000F55E19 /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E72A5942783863000F55E19 /* MainTabController.swift */; };
 		3E84FC1C2782FA2100574706 /* Milk_tea.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E84FC1B2782FA2100574706 /* Milk_tea.png */; };
 		3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EC3EE277DCAD70021818C /* AppDelegate.swift */; };
 		3E8EC3F1277DCAD70021818C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EC3F0277DCAD70021818C /* SceneDelegate.swift */; };
@@ -76,12 +76,12 @@
 		3E218A65278305890092EA20 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkTeaMapViewController.swift; sourceTree = "<group>"; };
 		3E327031278365700067F264 /* Helpers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Helpers; path = Image/Helpers; sourceTree = "<group>"; };
-		3E327035278365D30067F264 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3E5CA1972783535D00BE9913 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3E5CA1992783537100BE9913 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3E5CA19C278353A200BE9913 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		3E72A55A2783666200F55E19 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3E72A55D278368EA00F55E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3E72A5942783863000F55E19 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
 		3E84FC1B2782FA2100574706 /* Milk_tea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milk_tea.png; sourceTree = "<group>"; };
 		3E8EC3EB277DCAD70021818C /* VT6002CEM_Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VT6002CEM_Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8EC3EE277DCAD70021818C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,7 +167,6 @@
 			isa = PBXGroup;
 			children = (
 				3E72A55A2783666200F55E19 /* Utilities.swift */,
-				3E327035278365D30067F264 /* Constants.swift */,
 			);
 			path = Helps;
 			sourceTree = "<group>";
@@ -206,6 +205,7 @@
 				3E72A55C278366E000F55E19 /* Helps */,
 				3E8EC3F0277DCAD70021818C /* SceneDelegate.swift */,
 				3E8EC3EE277DCAD70021818C /* AppDelegate.swift */,
+				3E72A5942783863000F55E19 /* MainTabController.swift */,
 				3E84FC1A2782FA1100574706 /* Image */,
 				3E5CA1962783515D00BE9913 /* View Controllers */,
 				3E327031278365700067F264 /* Helpers */,
@@ -403,11 +403,11 @@
 			files = (
 				3E8EC3F3277DCAD70021818C /* ViewController.swift in Sources */,
 				3E5CA1982783535D00BE9913 /* SignUpViewController.swift in Sources */,
+				3E72A5952783863000F55E19 /* MainTabController.swift in Sources */,
 				3E72A55B2783666200F55E19 /* Utilities.swift in Sources */,
 				3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */,
 				3E8EC3F1277DCAD70021818C /* SceneDelegate.swift in Sources */,
 				3E5CA19A2783537100BE9913 /* LoginViewController.swift in Sources */,
-				3E327036278365D30067F264 /* Constants.swift in Sources */,
 				3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */,
 				3E218A66278305890092EA20 /* WebViewController.swift in Sources */,
 				3E5CA19D278353A200BE9913 /* MainPageViewController.swift in Sources */,
@@ -590,6 +590,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
@@ -620,6 +621,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";

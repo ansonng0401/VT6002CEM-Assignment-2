@@ -40,10 +40,8 @@ class LoginViewController: UIViewController {
             }
             else {
                 
-                let mainPageViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.mainPageViewController) as? MainPageViewController
-                
-                self.view.window?.rootViewController = mainPageViewController
-                self.view.window?.makeKeyAndVisible()
+                let mainTabController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
+                self.present(mainTabController, animated: true,completion: nil)
             }
         }
     }
