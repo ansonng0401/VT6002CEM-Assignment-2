@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -40,6 +41,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Introduction">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="pjA-eG-bII" kind="show" id="22S-fa-qrb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfw-51-91k">
                                 <rect key="frame" x="25" y="400" width="175" height="31"/>
@@ -58,6 +62,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1030.7692307692307" y="93.838862559241704"/>
+        </scene>
+        <!--Hong Kong-Style Milk Tea Introduction-->
+        <scene sceneID="vt7-fC-I99">
+            <objects>
+                <viewController id="pjA-eG-bII" customClass="WebViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Gj-6T-KRJ">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nfO-df-xr8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Hong Kong-Style Milk Tea Introduction" id="Eia-Ni-UuY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y20-4M-JEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1954" y="94"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Ly-ed-kw1">
@@ -80,5 +100,8 @@
     </scenes>
     <resources>
         <image name="Milk_tea.png" width="1920" height="1080"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
