@@ -52,6 +52,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Mike Tea Map">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="tbA-1D-xIC" kind="show" id="Tdh-ng-AQh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -78,6 +81,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y20-4M-JEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1954" y="94"/>
+        </scene>
+        <!--Milk Tea Map View Controller-->
+        <scene sceneID="Pxs-By-arX">
+            <objects>
+                <viewController id="tbA-1D-xIC" customClass="MilkTeaMapViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="hKT-j3-nag">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </mapView>
+                    <navigationItem key="navigationItem" id="oxI-3l-hKD"/>
+                    <connections>
+                        <outlet property="mapView" destination="hKT-j3-nag" id="kGN-96-VG1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehL-xr-dBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="825"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9Ly-ed-kw1">

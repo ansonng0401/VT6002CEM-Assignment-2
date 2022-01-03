@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3E218A66278305890092EA20 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A65278305890092EA20 /* WebViewController.swift */; };
-		3E218A68278308BA0092EA20 /* MikeTeaMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A67278308BA0092EA20 /* MikeTeaMapController.swift */; };
+		3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */; };
 		3E84FC1C2782FA2100574706 /* Milk_tea.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E84FC1B2782FA2100574706 /* Milk_tea.png */; };
 		3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EC3EE277DCAD70021818C /* AppDelegate.swift */; };
 		3E8EC3F1277DCAD70021818C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8EC3F0277DCAD70021818C /* SceneDelegate.swift */; };
@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		3E218A65278305890092EA20 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		3E218A67278308BA0092EA20 /* MikeTeaMapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MikeTeaMapController.swift; sourceTree = "<group>"; };
+		3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkTeaMapViewController.swift; sourceTree = "<group>"; };
 		3E84FC1B2782FA2100574706 /* Milk_tea.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Milk_tea.png; sourceTree = "<group>"; };
 		3E8EC3EB277DCAD70021818C /* VT6002CEM_Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VT6002CEM_Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8EC3EE277DCAD70021818C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				3E8EC3FF277DCAD80021818C /* Info.plist */,
 				3E8EC3F7277DCAD70021818C /* VT6002CEM_Assignment2.xcdatamodeld */,
 				3E218A65278305890092EA20 /* WebViewController.swift */,
-				3E218A67278308BA0092EA20 /* MikeTeaMapController.swift */,
+				3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */,
 			);
 			path = VT6002CEM_Assignment2;
 			sourceTree = "<group>";
@@ -282,7 +282,7 @@
 				3E8EC3F3277DCAD70021818C /* ViewController.swift in Sources */,
 				3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */,
 				3E8EC3F1277DCAD70021818C /* SceneDelegate.swift in Sources */,
-				3E218A68278308BA0092EA20 /* MikeTeaMapController.swift in Sources */,
+				3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */,
 				3E218A66278305890092EA20 /* WebViewController.swift in Sources */,
 				3E8EC3F9277DCAD70021818C /* VT6002CEM_Assignment2.xcdatamodeld in Sources */,
 			);
