@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         setUpElements()
 
-        // Do any additional setup after loading the view.
     }
     func setUpElements(){
         errorLabel.alpha=0
