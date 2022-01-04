@@ -9,7 +9,7 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var firstNameTextField: UITextField!
     
@@ -26,9 +26,31 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
-        
-        // Do any additional setup after loading the view.
+        configureTextFields()
+        configuteTapGesture()
     }
+    
+    private func configureTextFields(){
+        firstNameTextField.delegate = self
+        lastNameTextField.delegate = self
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        
+    }
+
+    private func configuteTapGesture(){
+        let tapGesture = UITapGestureRecognizer(target: self,action:
+                                                    #selector(LoginViewController.handleTap))
+        view.addGestureRecognizer(tapGesture)
+
+    }
+    @objc func handleTap(){
+        print("handle tap was called")
+        view.endEditing(true)
+    }
+    
+    
     func setUpElements(){
         errorLabel.alpha=0
         Utilities.styleTextField(firstNameTextField)

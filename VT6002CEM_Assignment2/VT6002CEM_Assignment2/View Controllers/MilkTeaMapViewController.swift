@@ -20,12 +20,12 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         if CLLocationManager.locationServicesEnabled() {
          self.locationManager = CLLocationManager();
          self.locationManager?.delegate = self;
-//         if CLLocationManager.authorizationStatus() != .authorizedAlways {
-//         self.locationManager?.requestAlwaysAuthorization();
-//         }
-//         else {
-//         self.setupAndStartLocationManager();
-//         }
+         if CLLocationManager.authorizationStatus() != .authorizedAlways {
+         self.locationManager?.requestAlwaysAuthorization();
+         }
+         else {
+         self.setupAndStartLocationManager();
+         }
          }
         
         let MilkTeaAnnotation = MKPointAnnotation();
@@ -105,15 +105,13 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
     didUpdateLocations locations: [CLLocation]) {
     if let location = locations.last {
 
+
     let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01);
     let coord = location.coordinate;
     let region = MKCoordinateRegion(center: coord, span: span)
     self.mapView?.setRegion(region, animated: false);
     }
     }
-   
-}
-
 /*
  // MARK: - Navigation
  
@@ -124,4 +122,4 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
  }
  */
 
-
+}
