@@ -11,6 +11,11 @@
 		3E01C9B72787892200134326 /* MainMilkShopInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E01C9B62787892200134326 /* MainMilkShopInfoViewController.swift */; };
 		3E14CD882784C10D00F36E94 /* SettingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E14CD872784C10C00F36E94 /* SettingPageViewController.swift */; };
 		3E14CD8A2784CEE600F36E94 /* 4K Video Downloader 4.19.3 macOS [FileCR].jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E14CD892784CEE600F36E94 /* 4K Video Downloader 4.19.3 macOS [FileCR].jpeg */; };
+		3E15684B278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E15684A278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg */; };
+		3E15684D278B24AA0044B205 /* ShuiKeeCoffee.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E15684C278B24AA0044B205 /* ShuiKeeCoffee.jpeg */; };
+		3E168713278B15580008805D /* Bing Kee Cha Dong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E168712278B15580008805D /* Bing Kee Cha Dong.jpg */; };
+		3E168716278B20130008805D /* 金鳳茶餐廳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E168715278B20130008805D /* 金鳳茶餐廳.jpg */; };
+		3E168718278B20510008805D /* 金寶冰廳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E168717278B20510008805D /* 金寶冰廳.jpg */; };
 		3E218A66278305890092EA20 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A65278305890092EA20 /* WebViewController.swift */; };
 		3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */; };
 		3E5CA1982783535D00BE9913 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1972783535D00BE9913 /* SignUpViewController.swift */; };
@@ -81,6 +86,11 @@
 		3E01C9B62787892200134326 /* MainMilkShopInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMilkShopInfoViewController.swift; sourceTree = "<group>"; };
 		3E14CD872784C10C00F36E94 /* SettingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPageViewController.swift; sourceTree = "<group>"; };
 		3E14CD892784CEE600F36E94 /* 4K Video Downloader 4.19.3 macOS [FileCR].jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4K Video Downloader 4.19.3 macOS [FileCR].jpeg"; sourceTree = "<group>"; };
+		3E15684A278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Kam Wah Cafe & Bakery.jpeg"; sourceTree = "<group>"; };
+		3E15684C278B24AA0044B205 /* ShuiKeeCoffee.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ShuiKeeCoffee.jpeg; sourceTree = "<group>"; };
+		3E168712278B15580008805D /* Bing Kee Cha Dong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Bing Kee Cha Dong.jpg"; sourceTree = "<group>"; };
+		3E168715278B20130008805D /* 金鳳茶餐廳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "金鳳茶餐廳.jpg"; sourceTree = "<group>"; };
+		3E168717278B20510008805D /* 金寶冰廳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "金寶冰廳.jpg"; sourceTree = "<group>"; };
 		3E218A65278305890092EA20 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkTeaMapViewController.swift; sourceTree = "<group>"; };
 		3E5CA1972783535D00BE9913 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -188,6 +198,11 @@
 				3EBE49BF278B0D3100CA8B9F /* HK_Lan_Fong_Yuen_Old_Shop.jpeg */,
 				3E14CD892784CEE600F36E94 /* 4K Video Downloader 4.19.3 macOS [FileCR].jpeg */,
 				3E84FC1B2782FA2100574706 /* Milk_tea.png */,
+				3E168712278B15580008805D /* Bing Kee Cha Dong.jpg */,
+				3E168715278B20130008805D /* 金鳳茶餐廳.jpg */,
+				3E168717278B20510008805D /* 金寶冰廳.jpg */,
+				3E15684A278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg */,
+				3E15684C278B24AA0044B205 /* ShuiKeeCoffee.jpeg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -383,13 +398,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E168716278B20130008805D /* 金鳳茶餐廳.jpg in Resources */,
 				3E84FC1C2782FA2100574706 /* Milk_tea.png in Resources */,
 				3E8EC3FE277DCAD80021818C /* LaunchScreen.storyboard in Resources */,
 				3E14CD8A2784CEE600F36E94 /* 4K Video Downloader 4.19.3 macOS [FileCR].jpeg in Resources */,
+				3E15684D278B24AA0044B205 /* ShuiKeeCoffee.jpeg in Resources */,
+				3E15684B278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg in Resources */,
 				3EBE49C0278B0D3100CA8B9F /* HK_Lan_Fong_Yuen_Old_Shop.jpeg in Resources */,
 				3E8EC3FB277DCAD80021818C /* Assets.xcassets in Resources */,
+				3E168713278B15580008805D /* Bing Kee Cha Dong.jpg in Resources */,
 				3E8EC3F6277DCAD70021818C /* Main.storyboard in Resources */,
 				3E72A55E278368EA00F55E19 /* GoogleService-Info.plist in Resources */,
+				3E168718278B20510008805D /* 金寶冰廳.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
