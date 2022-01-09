@@ -50,7 +50,7 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         
         let MilkTeaAnnotation5 = MKPointAnnotation();
         MilkTeaAnnotation3.coordinate = CLLocationCoordinate2D(latitude: 22.2755345, longitude: 114.1726029);
-        MilkTeaAnnotation3.title = "金鳳茶餐廳";
+        MilkTeaAnnotation3.title = "Kam Fung Restaurant";
         
         let MilkTeaAnnotation6 = MKPointAnnotation();
         MilkTeaAnnotation6.coordinate = CLLocationCoordinate2D(latitude: 22.3223001, longitude: 114.1696223);
@@ -66,11 +66,11 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         
         let MilkTeaAnnotation9 = MKPointAnnotation();
         MilkTeaAnnotation9.coordinate = CLLocationCoordinate2D(latitude: 22.32963847017184, longitude: 114.18896994693476);
-        MilkTeaAnnotation9.title = "樂園";
+        MilkTeaAnnotation9.title = "Lok Yuen";
         
         let MilkTeaAnnotation10 = MKPointAnnotation();
         MilkTeaAnnotation10.coordinate = CLLocationCoordinate2D(latitude: 22.2775350623987, longitude: 114.17394885667291);
-        MilkTeaAnnotation10.title = "檀島咖啡餅店";
+        MilkTeaAnnotation10.title = "Honolulu Coffee Shop";
         self.annotations.append(MilkTeaAnnotation10);
         self.annotations.append(MilkTeaAnnotation9);
         self.annotations.append(MilkTeaAnnotation8);
@@ -112,14 +112,4 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
     self.mapView?.setRegion(region, animated: false);
     }
     }
-/*
- // MARK: - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- // Get the new view controller using segue.destination.
- // Pass the selected object to the new view controller.
- }
- */
-
 }
