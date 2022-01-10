@@ -112,7 +112,7 @@
                         <color key="backgroundColor" red="0.99595206979999995" green="0.98440271619999997" blue="0.9254801869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="memoCellID" rowHeight="90" id="iJH-Ob-gj5" customClass="MemoCell" customModule="VT6002CEM_Assignment2" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="90"/>
+                                <rect key="frame" x="0.0" y="50" width="390" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iJH-Ob-gj5" id="1Fs-Zf-waT">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="90"/>
@@ -264,7 +264,7 @@
                                 <color key="backgroundColor" red="1" green="0.98431211709999999" blue="0.91765159370000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" textLabel="PTw-GH-YeC" rowHeight="80" style="IBUITableViewCellStyleDefault" id="c1k-xl-ECP">
-                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="80"/>
+                                        <rect key="frame" x="0.0" y="50" width="390" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1k-xl-ECP" id="NjP-0d-BTe">
                                             <rect key="frame" x="0.0" y="0.0" width="390" height="80"/>
