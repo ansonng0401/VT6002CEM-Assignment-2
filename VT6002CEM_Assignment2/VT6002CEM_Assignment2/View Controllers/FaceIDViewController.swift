@@ -20,9 +20,9 @@ class FaceIDViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        self.notifyUser("Welcome", err: "Please Use Biometrics sensor to enter the memo")
 
-        // Do any additional setup after loading the view.
+        super.viewDidLoad()
     }
     
     @IBAction func biometricBtn(_ sender: Any) {
@@ -44,15 +44,12 @@ class FaceIDViewController: UIViewController {
                             self.notifyUser("Plesase try again", err: err.localizedDescription)
                         case LAError.Code.userFallback.rawValue:
                             self.notifyUser("Authentication", err: "Password option selected")
-                            
-                            
                         default:
                             self.notifyUser("Authentication is failed", err: err.localizedDescription)
                         }
                     }else{
-//                        self.notifyUser("Authentication Successful", err: "You can Edit,View the Memo Now!!")
-//
-                   let navviewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "MemoNavViewController") as! MemoNavViewController
+                        self.notifyUser("Authentication Successful", err: "You can Edit,View the Memo Now!!")
+                        let navviewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "MemoNavViewController") as! MemoNavViewController
                         self.present(navviewcontroller, animated: true,completion: nil)
                         
                         
