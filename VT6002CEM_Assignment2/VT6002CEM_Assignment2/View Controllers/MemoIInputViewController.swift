@@ -71,30 +71,28 @@ class MemoIInputViewController: UIViewController {
             }
         }
     }
-
-    @IBAction func deleteMemoBtn(_ sender: Any){
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-    
-    let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Memo")
-    do {
-        let results:NSArray = try context.fetch(request) as NSArray
-        for result in results
-        {
-            let memo = result as! Memo
-            if(memo == selectedMemo)
+    @IBAction func deletebtn(_ sender: Any) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Memo")
+        do {
+            let results:NSArray = try context.fetch(request) as NSArray
+            for result in results
             {
-                memo.deletedDate = Date()
-                try context.save()
-                navigationController?.popViewController(animated: true)
+                let memo = result as! Memo
+                if(memo == selectedMemo)
+                {
+                    memo.deletedDate = Date()
+                    try context.save()
+                    navigationController?.popViewController(animated: true)
+                }
             }
         }
+        catch
+        {
+            print("Fetch Failed")
+        }
     }
-    catch
-    {
-        print("Fetch Failed")
     }
-}
-
-
-}
+    
