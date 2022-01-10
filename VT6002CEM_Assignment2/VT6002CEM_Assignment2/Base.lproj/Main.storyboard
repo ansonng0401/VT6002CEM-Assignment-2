@@ -23,8 +23,8 @@
                         <segue destination="pjA-eG-bII" kind="relationship" relationship="viewControllers" id="mAa-Fj-HIW"/>
                         <segue destination="ZCe-YP-791" kind="relationship" relationship="viewControllers" id="hBm-bz-Zwn"/>
                         <segue destination="jwV-FU-23g" kind="relationship" relationship="viewControllers" id="N9i-nI-1yc"/>
-                        <segue destination="Lxi-hR-4za" kind="relationship" relationship="viewControllers" id="h9g-uE-kNn"/>
                         <segue destination="fta-HR-Ddd" kind="relationship" relationship="viewControllers" id="eau-GE-Qbn"/>
+                        <segue destination="2YI-XB-dn3" kind="relationship" relationship="viewControllers" id="BYF-ke-jms"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZw-a9-hKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -102,7 +102,7 @@
         <!--Memo-->
         <scene sceneID="zBb-TB-d7h">
             <objects>
-                <tableViewController id="X7d-Xc-eyn" customClass="MemoTableViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MemoTableViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="X7d-Xc-eyn" customClass="MemoTableViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="u66-hW-3ps">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,19 +179,24 @@
         <!--Memo-->
         <scene sceneID="8zL-WW-pUk">
             <objects>
-                <navigationController id="Lxi-hR-4za" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MemoNavViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" toolbarHidden="NO" id="Lxi-hR-4za" customClass="MemoNavViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Memo" image="note.text" catalog="system" id="7Jq-Dy-lc3"/>
+                    <navigationItem key="navigationItem" id="Ahq-fF-rOy"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="SIz-NN-RY1">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="doJ-Uh-xad">
+                        <rect key="frame" x="0.0" y="761" width="390" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
-                        <segue destination="X7d-Xc-eyn" kind="relationship" relationship="rootViewController" id="8Ld-yb-PfO"/>
+                        <segue destination="X7d-Xc-eyn" kind="relationship" relationship="rootViewController" id="dLa-4i-3Qh"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ay-3r-WGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902" y="-901"/>
+            <point key="canvasLocation" x="937" y="-963"/>
         </scene>
         <!--Settings-->
         <scene sceneID="I0v-5f-pjJ">
@@ -663,7 +668,7 @@
         <!--Navigation Controller-->
         <scene sceneID="O8G-aT-lc5">
             <objects>
-                <navigationController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="eXt-mq-fnH" sceneMemberID="viewController">
+                <navigationController autoresizesArchivedViewToFullSize="NO" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="eXt-mq-fnH" sceneMemberID="viewController">
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="5ei-wY-ZNX"/>
@@ -679,10 +684,54 @@
             </objects>
             <point key="canvasLocation" x="901.53846153846155" y="-36.255924170616112"/>
         </scene>
+        <!--Memo-->
+        <scene sceneID="hIb-sC-kHz">
+            <objects>
+                <viewController id="2YI-XB-dn3" customClass="FaceIDViewController" customModule="VT6002CEM_Assignment2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M6j-EY-Iwa">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4sz-rd-tuc">
+                                <rect key="frame" x="105" y="407" width="180" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Authentication">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="biometricBtn:" destination="2YI-XB-dn3" eventType="touchUpInside" id="sX5-bQ-hhl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FaceID /TouchID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKE-u6-t93">
+                                <rect key="frame" x="105" y="357" width="184" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Memo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="133-j6-kxh">
+                                <rect key="frame" x="159" y="320" width="72" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ug1-gN-SMl"/>
+                        <color key="backgroundColor" red="0.99595206979999995" green="0.98440271619999997" blue="0.9254801869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Memo" selectedImage="note.text" catalog="system" id="0W5-mR-T0I"/>
+                    <navigationItem key="navigationItem" id="Yb2-2M-Y8i"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qH9-u9-hzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60" y="-919.19431279620846"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="SUL-qK-IY5"/>
-        <segue reference="HdC-rS-liP"/>
+        <segue reference="0gb-mn-uBO"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="HKMALKTEA.jpeg" width="720" height="960"/>

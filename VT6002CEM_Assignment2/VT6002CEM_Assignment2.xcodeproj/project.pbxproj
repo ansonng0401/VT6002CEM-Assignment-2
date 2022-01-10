@@ -24,6 +24,8 @@
 		3E5CA1982783535D00BE9913 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1972783535D00BE9913 /* SignUpViewController.swift */; };
 		3E5CA19A2783537100BE9913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1992783537100BE9913 /* LoginViewController.swift */; };
 		3E5CA19D278353A200BE9913 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA19C278353A200BE9913 /* MainPageViewController.swift */; };
+		3E5D2CE2278C1A5A005A6E70 /* FaceIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D2CE1278C1A5A005A6E70 /* FaceIDViewController.swift */; };
+		3E5D2CE6278C223D005A6E70 /* MemoNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D2CE5278C223D005A6E70 /* MemoNavViewController.swift */; };
 		3E72A55B2783666200F55E19 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E72A55A2783666200F55E19 /* Utilities.swift */; };
 		3E72A55E278368EA00F55E19 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E72A55D278368EA00F55E19 /* GoogleService-Info.plist */; };
 		3E72A56127836B7800F55E19 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3E72A56027836B7800F55E19 /* FirebaseAnalytics */; };
@@ -106,6 +108,8 @@
 		3E5CA1972783535D00BE9913 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3E5CA1992783537100BE9913 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3E5CA19C278353A200BE9913 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		3E5D2CE1278C1A5A005A6E70 /* FaceIDViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceIDViewController.swift; sourceTree = "<group>"; };
+		3E5D2CE5278C223D005A6E70 /* MemoNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoNavViewController.swift; sourceTree = "<group>"; };
 		3E72A55A2783666200F55E19 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		3E72A55D278368EA00F55E19 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E72A5942783863000F55E19 /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
@@ -196,6 +200,8 @@
 				3E01C9B62787892200134326 /* MainMilkShopInfoViewController.swift */,
 				3EC4DF05278B4F2C000323CD /* MemoIInputViewController.swift */,
 				3EC4DF09278B4F85000323CD /* MemoTableViewController.swift */,
+				3E5D2CE1278C1A5A005A6E70 /* FaceIDViewController.swift */,
+				3E5D2CE5278C223D005A6E70 /* MemoNavViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -465,6 +471,7 @@
 				3E01C9B5278787B300134326 /* MilkShopInfoViewController.swift in Sources */,
 				3E72A55B2783666200F55E19 /* Utilities.swift in Sources */,
 				3E14CD882784C10D00F36E94 /* SettingPageViewController.swift in Sources */,
+				3E5D2CE2278C1A5A005A6E70 /* FaceIDViewController.swift in Sources */,
 				3EC4DF0A278B4F85000323CD /* MemoTableViewController.swift in Sources */,
 				3EC4DF08278B4F5E000323CD /* MemoCell.swift in Sources */,
 				3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */,
@@ -473,6 +480,7 @@
 				3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */,
 				3E218A66278305890092EA20 /* WebViewController.swift in Sources */,
 				3E5CA19D278353A200BE9913 /* MainPageViewController.swift in Sources */,
+				3E5D2CE6278C223D005A6E70 /* MemoNavViewController.swift in Sources */,
 				3EC4DF10278B5BF0000323CD /* Memo.swift in Sources */,
 				3E01C9B72787892200134326 /* MainMilkShopInfoViewController.swift in Sources */,
 				3E8EC3F9277DCAD70021818C /* VT6002CEM_Assignment2.xcdatamodeld in Sources */,
@@ -657,6 +665,7 @@
 				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
@@ -688,6 +697,7 @@
 				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
