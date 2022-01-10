@@ -23,8 +23,8 @@
                         <segue destination="pjA-eG-bII" kind="relationship" relationship="viewControllers" id="mAa-Fj-HIW"/>
                         <segue destination="ZCe-YP-791" kind="relationship" relationship="viewControllers" id="hBm-bz-Zwn"/>
                         <segue destination="jwV-FU-23g" kind="relationship" relationship="viewControllers" id="N9i-nI-1yc"/>
+                        <segue destination="2YI-XB-dn3" kind="relationship" relationship="viewControllers" id="Ihx-70-FbW"/>
                         <segue destination="fta-HR-Ddd" kind="relationship" relationship="viewControllers" id="eau-GE-Qbn"/>
-                        <segue destination="2YI-XB-dn3" kind="relationship" relationship="viewControllers" id="BYF-ke-jms"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QZw-a9-hKW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -721,7 +721,7 @@
                         <viewLayoutGuide key="safeArea" id="ug1-gN-SMl"/>
                         <color key="backgroundColor" red="0.99595206979999995" green="0.98440271619999997" blue="0.9254801869" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Memo" selectedImage="note.text" catalog="system" id="0W5-mR-T0I"/>
+                    <tabBarItem key="tabBarItem" title="Memo" image="note.text" catalog="system" id="0W5-mR-T0I"/>
                     <navigationItem key="navigationItem" id="Yb2-2M-Y8i"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qH9-u9-hzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -730,7 +730,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="SUL-qK-IY5"/>
+        <segue reference="zv3-gI-DN7"/>
         <segue reference="0gb-mn-uBO"/>
     </inferredMetricsTieBreakers>
     <resources>

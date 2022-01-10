@@ -48,10 +48,9 @@ class FaceIDViewController: UIViewController {
                             self.notifyUser("Authentication is failed", err: err.localizedDescription)
                         }
                     }else{
-                        self.notifyUser("Authentication Successful", err: "You can Edit,View the Memo Now!!")
                         let navviewcontroller = self.storyboard?.instantiateViewController(withIdentifier: "MemoNavViewController") as! MemoNavViewController
                         self.present(navviewcontroller, animated: true,completion: nil)
-                        
+
                         
                     }
                 }

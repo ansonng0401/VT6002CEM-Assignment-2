@@ -13,6 +13,7 @@ class MemoTableViewController: UITableViewController {
 var firstLoad = true
     
 
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -43,6 +44,8 @@ var firstLoad = true
     
     override func viewDidLoad()
     {
+        self.notifyUser("Authentication Successful", err: "Enjoy use the memo!!")
+
         if(firstLoad)
         {
             firstLoad = false

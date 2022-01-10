@@ -191,11 +191,11 @@
 			children = (
 				3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */,
 				3E218A65278305890092EA20 /* WebViewController.swift */,
+				3E5CA19C278353A200BE9913 /* MainPageViewController.swift */,
 				3E8EC3F2277DCAD70021818C /* ViewController.swift */,
 				3E5CA1972783535D00BE9913 /* SignUpViewController.swift */,
 				3E5CA1992783537100BE9913 /* LoginViewController.swift */,
 				3E14CD872784C10C00F36E94 /* SettingPageViewController.swift */,
-				3E5CA19C278353A200BE9913 /* MainPageViewController.swift */,
 				3E01C9B4278787B300134326 /* MilkShopInfoViewController.swift */,
 				3E01C9B62787892200134326 /* MainMilkShopInfoViewController.swift */,
 				3EC4DF05278B4F2C000323CD /* MemoIInputViewController.swift */,
@@ -665,6 +665,7 @@
 				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HK Milk Tea App";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
@@ -697,6 +698,7 @@
 				DEVELOPMENT_TEAM = 38TQSZJ883;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = VT6002CEM_Assignment2/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "HK Milk Tea App";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "";
