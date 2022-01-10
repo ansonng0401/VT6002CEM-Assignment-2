@@ -8,7 +8,7 @@
 import UIKit
 import FirebaseAuth
 class LoginViewController: UIViewController, UITextFieldDelegate {
-
+    
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
@@ -17,7 +17,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var errorLabel: UILabel!
     
     
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
@@ -35,12 +35,12 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
         
     }
-
+    
     private func configuteTapGesture(){
         let tapGesture = UITapGestureRecognizer(target: self,action:
                                                     #selector(LoginViewController.handleTap))
         view.addGestureRecognizer(tapGesture)
-
+        
     }
     @objc func handleTap(){
         print("handle tap was called")
@@ -50,7 +50,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginTapped(_ sender: Any) {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-    
+        
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             
             if error != nil {

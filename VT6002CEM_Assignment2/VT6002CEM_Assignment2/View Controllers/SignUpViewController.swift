@@ -38,12 +38,12 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.delegate = self
         
     }
-
+    
     private func configuteTapGesture(){
         let tapGesture = UITapGestureRecognizer(target: self,action:
                                                     #selector(LoginViewController.handleTap))
         view.addGestureRecognizer(tapGesture)
-
+        
     }
     @objc func handleTap(){
         print("handle tap was called")

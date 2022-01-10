@@ -8,24 +8,44 @@
 
 import UIKit
 import CoreData
-class MemoIInputViewController: UIViewController {
-
+class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+    
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var DescriptionTextView: UITextView!
     var selectedMemo: Memo? = nil
     
     override func viewDidLoad()
     {
-      super.viewDidLoad()
+        
+        super.viewDidLoad()
+        configureTextFields()
+        configuteTapGesture()
         if(selectedMemo != nil)
         {
             titleTextField.text = selectedMemo?.title
             DescriptionTextView.text = selectedMemo?.desc
         }
-   }
-
+    }
     
-
+    
+    private func configureTextFields(){
+        titleTextField.delegate = self
+        DescriptionTextView.delegate = self
+        
+    }
+    
+    private func configuteTapGesture(){
+        let tapGesture = UITapGestureRecognizer(target: self,action:
+                                                    #selector(MemoIInputViewController.handleTap))
+        view.addGestureRecognizer(tapGesture)
+        
+    }
+    @objc func handleTap(){
+        print("handle tap was called")
+        view.endEditing(true)
+    }
+    
+    
     @IBAction func saveAction(_ sender: Any)
     {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -94,5 +114,5 @@ class MemoIInputViewController: UIViewController {
             print("Fetch Failed")
         }
     }
-    }
-    
+}
+

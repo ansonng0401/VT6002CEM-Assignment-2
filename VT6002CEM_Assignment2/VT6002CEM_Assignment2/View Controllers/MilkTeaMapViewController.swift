@@ -18,15 +18,15 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         if CLLocationManager.locationServicesEnabled() {
-         self.locationManager = CLLocationManager();
-         self.locationManager?.delegate = self;
-         if CLLocationManager.authorizationStatus() != .authorizedAlways {
-         self.locationManager?.requestAlwaysAuthorization();
-         }
-         else {
-         self.setupAndStartLocationManager();
-         }
-         }
+            self.locationManager = CLLocationManager();
+            self.locationManager?.delegate = self;
+            if CLLocationManager.authorizationStatus() != .authorizedAlways {
+                self.locationManager?.requestAlwaysAuthorization();
+            }
+            else {
+                self.setupAndStartLocationManager();
+            }
+        }
         
         let MilkTeaAnnotation = MKPointAnnotation();
         MilkTeaAnnotation.coordinate = CLLocationCoordinate2D(latitude: 22.296971, longitude: 114.1745367);
@@ -89,27 +89,27 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
     
     //for in-app authorization event
     func locationManager(_ manager: CLLocationManager,
-    didChangeAuthorization status: CLAuthorizationStatus) {
-    if status == .authorizedAlways {
-    self.setupAndStartLocationManager();
+                         didChangeAuthorization status: CLAuthorizationStatus) {
+        if status == .authorizedAlways {
+            self.setupAndStartLocationManager();
+        }
     }
-    }
-
+    
     func setupAndStartLocationManager(){
-    self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest;
-    self.locationManager?.distanceFilter = kCLDistanceFilterNone;
-    self.locationManager?.startUpdatingLocation();
+        self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest;
+        self.locationManager?.distanceFilter = kCLDistanceFilterNone;
+        self.locationManager?.startUpdatingLocation();
     }
-   
-   func locationManager(_ manager: CLLocationManager,
-    didUpdateLocations locations: [CLLocation]) {
-    if let location = locations.last {
-
-
-    let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01);
-    let coord = location.coordinate;
-    let region = MKCoordinateRegion(center: coord, span: span)
-    self.mapView?.setRegion(region, animated: false);
-    }
+    
+    func locationManager(_ manager: CLLocationManager,
+                         didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+            
+            
+            let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01);
+            let coord = location.coordinate;
+            let region = MKCoordinateRegion(center: coord, span: span)
+            self.mapView?.setRegion(region, animated: false);
+        }
     }
 }

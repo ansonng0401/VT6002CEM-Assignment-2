@@ -17,12 +17,12 @@ var placegooglemapurl=["https://www.google.com.hk/maps/place/%E8%98%AD%E8%8A%B3%
 var myIndex=0
 
 class MainMilkShopInfoViewController: UIViewController {
-
-
+    
+    
     @IBOutlet var myTable: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
 }
@@ -36,7 +36,7 @@ extension MainMilkShopInfoViewController:UITableViewDelegate,UITableViewDataSour
         let cell = myTable.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text =  placeNames[indexPath.row]
         
-
+        
         return cell
     }
     

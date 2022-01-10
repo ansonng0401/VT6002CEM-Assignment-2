@@ -9,11 +9,11 @@ import UIKit
 import FirebaseMLModelDownloader
 
 class MilkShopInfoViewController: UIViewController {
-
-   
-
+    
+    
+    
     @IBOutlet weak var placeDescriptionTextView: UITextView!
- 
+    
     @IBOutlet weak var placeImage: UIImageView!
     @IBOutlet weak var placeNameLabel: UILabel!
     
@@ -30,22 +30,20 @@ class MilkShopInfoViewController: UIViewController {
         placeAddressLabel.text=placeAddress[myIndex]
         placeTelLabel.text=placeTel[myIndex]
         PlaceBusinehoursLabel.text=placeBusinehours[myIndex]
-
-
     }
     
-
+    
     @IBAction func urlButton(_ sender: Any) {
         UIApplication.shared.open(URL(string:placegooglemapurl[myIndex])! as URL, options: [:], completionHandler:nil)
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

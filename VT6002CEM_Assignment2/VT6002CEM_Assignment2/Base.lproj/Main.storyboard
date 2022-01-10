@@ -199,7 +199,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0ay-3r-WGb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="937" y="-963"/>
+            <point key="canvasLocation" x="902" y="-919"/>
         </scene>
         <!--Settings-->
         <scene sceneID="I0v-5f-pjJ">
@@ -219,6 +219,7 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="logoutbtn:" destination="fta-HR-Ddd" eventType="touchUpInside" id="340-wT-4Eo"/>
                                     <segue destination="nFh-Gl-4Vx" kind="modal" modalPresentationStyle="fullScreen" id="zv3-gI-DN7"/>
                                 </connections>
                             </button>
@@ -241,7 +242,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yf-vf-ob5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1968" y="871"/>
+            <point key="canvasLocation" x="1968" y="872"/>
         </scene>
         <!--Recommand Shop-->
         <scene sceneID="uFi-Nt-gXM">

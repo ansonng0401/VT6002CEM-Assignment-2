@@ -10,10 +10,10 @@ import CoreData
 var memoList = [Memo]()
 
 class MemoTableViewController: UITableViewController {
-var firstLoad = true
+    var firstLoad = true
     
-
-
+    
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
@@ -21,17 +21,17 @@ var firstLoad = true
         {
             
             
-         let indexPath = tableView.indexPathForSelectedRow
+            let indexPath = tableView.indexPathForSelectedRow
             
             let memoDetail = segue.destination as? MemoIInputViewController
             
             let selectedMemo : Memo!
             selectedMemo = nonDeletedMemo()[indexPath!.row]
-           memoDetail!.selectedMemo = selectedMemo
-
-     tableView.deselectRow(at: indexPath!, animated: true)
+            memoDetail!.selectedMemo = selectedMemo
+            
+            tableView.deselectRow(at: indexPath!, animated: true)
         }
-     
+        
     }
     
     func notifyUser(_ msg: String, err:String?){
@@ -45,7 +45,7 @@ var firstLoad = true
     override func viewDidLoad()
     {
         self.notifyUser("Authentication Successful", err: "Enjoy use the memo!!")
-
+        
         if(firstLoad)
         {
             firstLoad = false
@@ -69,7 +69,7 @@ var firstLoad = true
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-          let memoCell = tableView.dequeueReusableCell(withIdentifier: "memoCellID", for: indexPath) as! MemoCell
+        let memoCell = tableView.dequeueReusableCell(withIdentifier: "memoCellID", for: indexPath) as! MemoCell
         
         let thisMemo: Memo!
         thisMemo = nonDeletedMemo()[indexPath.row]
@@ -83,9 +83,9 @@ var firstLoad = true
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return nonDeletedMemo().count
     }
-     
     
-
+    
+    
     override func viewDidAppear(_ animated: Bool) {
         tableView.reloadData()
     }
@@ -93,8 +93,8 @@ var firstLoad = true
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.performSegue(withIdentifier: "editMemo", sender: self)
     }
-
-   
+    
+    
     
     func nonDeletedMemo() -> [Memo]
     {
@@ -108,4 +108,4 @@ var firstLoad = true
         }
         return noDeleteMemoList
     }
-    }
+}

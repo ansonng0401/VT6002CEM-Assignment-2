@@ -9,7 +9,7 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController {
-let webView = WKWebView()
+    let webView = WKWebView()
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(webView)
@@ -25,6 +25,6 @@ let webView = WKWebView()
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
     }
-
-
+    
+    
 }
