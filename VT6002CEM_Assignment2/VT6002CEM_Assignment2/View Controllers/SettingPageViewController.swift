@@ -6,19 +6,27 @@
 //
 
 import UIKit
-import FirebaseAuth
 import Firebase
+
 
 class SettingPageViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     
+    @IBOutlet weak var email: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        getData()
     }
-    func notifyUser(_ msg: String, err:String?){
+    
+    func getData(){
+        let db = Firestore.firestore()
+        email.text = Auth.auth().currentUser?.email
         
+        
+    }
+    
+    
+    func notifyUser(_ msg: String, err:String?){
         let alert = UIAlertController(title: msg, message: err, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
@@ -51,24 +59,20 @@ class SettingPageViewController: UIViewController {
 
 extension SettingPageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
-  func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
-    
-    
-    if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
-        imageView.image = image
-      }
-      picker.dismiss(animated: true, completion: nil)
-      }
-      
-      func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
-      picker.dismiss(animated: true, completion: nil)
-      }
-      }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
 
 
+      if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+          imageView.image = image
+        }
+        picker.dismiss(animated: true, completion: nil)
+        }
 
-
-
+        func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
+        picker.dismiss(animated: true, completion: nil)
+        }
+        }
 
 /*
  MARK: - Navigation

@@ -210,7 +210,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="enl-F5-kp2">
-                                <rect key="frame" x="16" y="669" width="358" height="39"/>
+                                <rect key="frame" x="12" y="685" width="358" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
@@ -231,14 +231,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GSs-Jx-SD3">
-                                <rect key="frame" x="26" y="141" width="202" height="107"/>
+                                <rect key="frame" x="26" y="141" width="209" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i04-ls-EVq">
+                                <rect key="frame" x="253" y="227" width="113" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Camera"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="fta-HR-Ddd" eventType="touchUpInside" id="Us1-LV-xhA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UU9-es-omU">
+                                <rect key="frame" x="26" y="300" width="340" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HKMALKTEA.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="b6P-EH-Iau">
+                                <rect key="frame" x="53" y="340" width="288" height="337"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGG-nc-umQ">
-                                <rect key="frame" x="245" y="179" width="113" height="31"/>
+                                <rect key="frame" x="253" y="167" width="113" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Pick image"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Pick Image"/>
                                 <connections>
                                     <action selector="didTapButton" destination="fta-HR-Ddd" eventType="touchUpInside" id="2xg-go-MTl"/>
                                 </connections>
@@ -249,6 +269,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="person.fill" catalog="system" id="3U9-Q6-FbB"/>
                     <connections>
+                        <outlet property="email" destination="UU9-es-omU" id="uSR-Fr-dmw"/>
                         <outlet property="imageView" destination="GSs-Jx-SD3" id="wYQ-Tk-H6p"/>
                     </connections>
                 </viewController>
@@ -336,7 +357,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8hq-q8-S5u">
-                                <rect key="frame" x="8" y="425" width="374" height="317"/>
+                                <rect key="frame" x="8" y="451" width="374" height="291"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99559181929999996" green="0.98540383580000002" blue="0.92548137900000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">Hong Kong-style milk tea is a tea drink made from black tea and milk (usually evaporated milk or condensed milk). It is usually part of lunch in Hong Kong tea culture. Hongkongers consume approximately a total of 900 million glasses/cups per year. Although originating from Hong Kong, it can also be found overseas in restaurants serving Hong Kong cuisine and Hong Kong-style western cuisine. In the show Top Eat 100, which aired on 4 February 2012, Hong Kong-style milk tea was listed as the 4th most popular food/drink in Hong Kong. The unique tea making technique is listed on the representative list of the Intangible Cultural Heritage of Hong Kong.</string>
@@ -345,15 +366,32 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Milk_tea.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wqi-wb-8HZ">
-                                <rect key="frame" x="8" y="193" width="374" height="224"/>
+                                <rect key="frame" x="8" y="219" width="374" height="224"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="USERNAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0w-L7-4YL">
+                                <rect key="frame" x="122" y="177" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-3W-gvl">
+                                <rect key="frame" x="8" y="177" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.98598076669474322" blue="0.92548416872018613" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Main Page" image="house" catalog="system" id="hzi-RD-Y0L"/>
                     <navigationItem key="navigationItem" id="UOX-6C-SLw"/>
+                    <connections>
+                        <outlet property="name" destination="d0w-L7-4YL" id="rV7-0j-Q6M"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -742,7 +780,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qH9-u9-hzR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="60" y="-919.19431279620846"/>
+            <point key="canvasLocation" x="-228" y="-844"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -750,6 +788,7 @@
         <segue reference="0gb-mn-uBO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="HKMALKTEA.jpeg" width="720" height="960"/>
         <image name="Milk_tea.png" width="1920" height="1080"/>
         <image name="book.fill" catalog="system" width="128" height="95"/>
         <image name="house" catalog="system" width="128" height="106"/>
