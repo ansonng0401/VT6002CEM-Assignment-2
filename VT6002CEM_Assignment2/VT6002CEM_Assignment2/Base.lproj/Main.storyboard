@@ -249,7 +249,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="person.fill" catalog="system" id="3U9-Q6-FbB"/>
                     <connections>
-                        <outlet property="imageView" destination="GSs-Jx-SD3" id="rGV-VF-sb2"/>
+                        <outlet property="imageView" destination="GSs-Jx-SD3" id="wYQ-Tk-H6p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yf-vf-ob5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
