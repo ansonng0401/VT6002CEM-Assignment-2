@@ -11,6 +11,8 @@ import Firebase
 
 class SettingPageViewController: UIViewController {
     
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -37,7 +39,12 @@ class SettingPageViewController: UIViewController {
             self.notifyUser("Authentication Successful", err: signOutError.localizedDescription)
         }
     }
+    
+    @IBAction func didTapButton(){
+        
+    }
 }
+
 
 
 
