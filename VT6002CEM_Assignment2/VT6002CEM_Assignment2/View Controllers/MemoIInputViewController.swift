@@ -17,8 +17,8 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        configureTextFields()
-        configuteTapGesture()
+        configureTextFields()//The keyboard can be hidden when the user is not pressed keyboard interface
+        configuteTapGesture()//The keyboard can be hidden when the user is not pressed keyboard interface
         if(selectedMemo != nil)
         {
             titleTextField.text = selectedMemo?.title
@@ -27,28 +27,28 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
     }
     
     
-    private func configureTextFields(){
+    private func configureTextFields(){//The keyboard can be hidden when the user is not pressed keyboard interface
         titleTextField.delegate = self
         DescriptionTextView.delegate = self
         
     }
     
-    private func configuteTapGesture(){
+    private func configuteTapGesture(){ //The keyboard can be hidden when the user is not pressed keyboard interface
         let tapGesture = UITapGestureRecognizer(target: self,action:
                                                     #selector(MemoIInputViewController.handleTap))
         view.addGestureRecognizer(tapGesture)
         
     }
-    @objc func handleTap(){
+    @objc func handleTap(){ //The keyboard can be hidden when the user is not pressed keyboard interface
         print("handle tap was called")
         view.endEditing(true)
     }
     
-    @IBAction func saveAction(_ sender: Any)
+    @IBAction func saveAction(_ sender: Any) //save button action
     {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-        if(selectedMemo == nil)
+        if(selectedMemo == nil) //save new memo
         {
             let entity = NSEntityDescription.entity(forEntityName: "Memo", in: context)
             let newMemo = Memo(entity: entity!, insertInto: context)
@@ -66,7 +66,7 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
                 print("context save error")
             }
         }
-        else //edit
+        else //save edit memo
         {
             let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Memo")
             do {
@@ -89,7 +89,7 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
             }
         }
     }
-    @IBAction func deletebtn(_ sender: Any) {
+    @IBAction func deletebtn(_ sender: Any) { // delete memo function
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
         

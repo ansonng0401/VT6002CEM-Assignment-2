@@ -21,7 +21,6 @@ class MemoTableViewController: UITableViewController {
             let selectedMemo : Memo!
             selectedMemo = nonDeletedMemo()[indexPath!.row]
             memoDetail!.selectedMemo = selectedMemo
-            
             tableView.deselectRow(at: indexPath!, animated: true)
         }
         
@@ -38,7 +37,7 @@ class MemoTableViewController: UITableViewController {
     override func viewDidLoad()
     {
         self.notifyUser("Authentication Successful", err: "Enjoy use the memo!!") //show alert message Authentication Successful Enjoy use the memo!!
-        if(firstLoad)
+        if(firstLoad) // load the memo data base data and show at at the table view
         {
             firstLoad = false
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -65,10 +64,8 @@ class MemoTableViewController: UITableViewController {
         
         let thisMemo: Memo!
         thisMemo = nonDeletedMemo()[indexPath.row]
-        
         memoCell.titleLabel.text = thisMemo.title
         memoCell.descriptionLabel.text = thisMemo.desc
-        
         return memoCell
     }
     
@@ -78,7 +75,7 @@ class MemoTableViewController: UITableViewController {
     
     
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) { // if open the table view again, reload the data 
         tableView.reloadData()
     }
     

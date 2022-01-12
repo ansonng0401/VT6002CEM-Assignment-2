@@ -96,7 +96,7 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
-    
+    //auto update the user location point
     func setupAndStartLocationManager(){
         self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager?.distanceFilter = kCLDistanceFilterNone;

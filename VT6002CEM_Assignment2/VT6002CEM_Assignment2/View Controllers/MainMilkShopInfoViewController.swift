@@ -40,7 +40,7 @@ extension MainMilkShopInfoViewController:UITableViewDelegate,UITableViewDataSour
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) { //show the placeName at the tableView 
         myIndex = indexPath.row
         myTable.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "MilkShopInfo", sender: self)
