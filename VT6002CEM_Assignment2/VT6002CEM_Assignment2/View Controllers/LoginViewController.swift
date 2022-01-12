@@ -20,29 +20,30 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpElements()
-        configureTextFields()
-        configuteTapGesture()
+        setUpElements() //function connect to the Utilities for ui design
+        configureTextFields()//The keyboard can be hidden when the user is not pressed keyboard interface
+        configuteTapGesture()//The keyboard can be hidden when the user is not pressed keyboard interface
     }
-    func setUpElements(){
+    
+    func setUpElements(){ //function connect to the Utilities for ui design
         errorLabel.alpha=0
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
     }
     
-    private func configureTextFields(){
+    private func configureTextFields(){ //The keyboard can be hidden when the user is not pressed keyboard interface
         emailTextField.delegate = self
         passwordTextField.delegate = self
         
     }
     
-    private func configuteTapGesture(){
+    private func configuteTapGesture(){ //The keyboard can be hidden when the user is not pressed keyboard interface
         let tapGesture = UITapGestureRecognizer(target: self,action:
                                                     #selector(LoginViewController.handleTap))
         view.addGestureRecognizer(tapGesture)
         
     }
-    @objc func handleTap(){
+    @objc func handleTap(){ //The keyboard can be hidden when the user is not pressed keyboard interface
         print("handle tap was called")
         view.endEditing(true)
     }
@@ -51,14 +52,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         
-        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in //Connect to database check the password, useremail is it correct
             
-            if error != nil {
+            if error != nil { //if error show error message lable
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             }
             else {
-                
+                //move the MainTabController (main page)
                 let mainTabController = self.storyboard?.instantiateViewController(withIdentifier: "MainTabController") as! MainTabController
                 self.present(mainTabController, animated: true,completion: nil)
             }

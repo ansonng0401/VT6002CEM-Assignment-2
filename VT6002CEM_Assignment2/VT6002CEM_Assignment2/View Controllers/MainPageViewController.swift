@@ -9,19 +9,17 @@ import UIKit
 import Firebase
 
 class MainPageViewController: UIViewController {
-
+    
     @IBOutlet weak var name: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
-        
-        
+        getFirebaseData() //When Run Setting Page Run getFirebaseData() function to get user email address
     }
     
     
-    func getData(){
-        let db = Firestore.firestore()
-        name.text = Auth.auth().currentUser?.email
+    func getFirebaseData(){
+        let db = Firestore.firestore() // let db as Firestore.firestore()
+        name.text = Auth.auth().currentUser?.email // let label (name) get firebase email address and show at at this label
     }
-
+    
 }

@@ -28,6 +28,7 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
             }
         }
         
+        //set the Milk Tea Shop, Restaurant name and lat and long for show the point at the map
         let MilkTeaAnnotation = MKPointAnnotation();
         MilkTeaAnnotation.coordinate = CLLocationCoordinate2D(latitude: 22.296971, longitude: 114.1745367);
         MilkTeaAnnotation.title = "Shan Tea";
@@ -87,7 +88,7 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         
     }
     
-    //for in-app authorization event
+    // get the gps location
     func locationManager(_ manager: CLLocationManager,
                          didChangeAuthorization status: CLAuthorizationStatus) {
         if status == .authorizedAlways {
@@ -95,17 +96,17 @@ class MilkTeaMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    
     func setupAndStartLocationManager(){
         self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest;
         self.locationManager?.distanceFilter = kCLDistanceFilterNone;
         self.locationManager?.startUpdatingLocation();
     }
     
+    
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-            
-            
             let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01);
             let coord = location.coordinate;
             let region = MKCoordinateRegion(center: coord, span: span)

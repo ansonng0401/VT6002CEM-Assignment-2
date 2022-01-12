@@ -12,19 +12,12 @@ var memoList = [Memo]()
 class MemoTableViewController: UITableViewController {
     var firstLoad = true
     
-    
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
         if(segue.identifier == "editMemo")
         {
-            
-            
             let indexPath = tableView.indexPathForSelectedRow
-            
             let memoDetail = segue.destination as? MemoIInputViewController
-            
             let selectedMemo : Memo!
             selectedMemo = nonDeletedMemo()[indexPath!.row]
             memoDetail!.selectedMemo = selectedMemo
@@ -34,8 +27,8 @@ class MemoTableViewController: UITableViewController {
         
     }
     
+    //notifyUser User function, for alert users
     func notifyUser(_ msg: String, err:String?){
-        
         let alert = UIAlertController(title: msg, message: err, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
         alert.addAction(cancelAction)
@@ -44,8 +37,7 @@ class MemoTableViewController: UITableViewController {
     
     override func viewDidLoad()
     {
-        self.notifyUser("Authentication Successful", err: "Enjoy use the memo!!")
-        
+        self.notifyUser("Authentication Successful", err: "Enjoy use the memo!!") //show alert message Authentication Successful Enjoy use the memo!!
         if(firstLoad)
         {
             firstLoad = false

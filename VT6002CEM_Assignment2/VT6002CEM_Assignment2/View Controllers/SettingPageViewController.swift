@@ -15,17 +15,17 @@ class SettingPageViewController: UIViewController {
     @IBOutlet weak var email: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        getData()
-    }
-    
-    func getData(){
-        let db = Firestore.firestore()
-        email.text = Auth.auth().currentUser?.email
-        
-        
+        getFireBaseData() //When Run Setting Page Run getFireBaseData() function to get user email address
     }
     
     
+    func getFireBaseData(){
+        let db = Firestore.firestore() // let db as Firestore.firestore()
+        email.text = Auth.auth().currentUser?.email // let label (email) get firebase email address and show at at this label
+    }
+    
+    
+    //notifyUser User function, for alert users
     func notifyUser(_ msg: String, err:String?){
         let alert = UIAlertController(title: msg, message: err, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
@@ -33,7 +33,7 @@ class SettingPageViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    
+    //logout button code for sign out the account
     @IBAction func logoutbtn(_ sender: Any) {
         let auth = Auth.auth()
         
@@ -47,41 +47,28 @@ class SettingPageViewController: UIViewController {
         }
     }
     
-    @IBAction func didTapButton(){
+    @IBAction func didTapButton(){ // function for when pick up photo show the photo library
         let vc = UIImagePickerController()
         vc.sourceType = .photoLibrary
         vc.delegate = self
         vc.allowsEditing = true
         present(vc, animated: true)
     }
-
+    
 }
 
+//functions for get the image at photo library and show it on Image view
 extension SettingPageViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
-
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
-
-
-      if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
-          imageView.image = image
+        
+        if let image = info[UIImagePickerController.InfoKey(rawValue: "UIImagePickerControllerEditedImage")] as? UIImage {
+            imageView.image = image
         }
         picker.dismiss(animated: true, completion: nil)
-        }
-
-        func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController){
         picker.dismiss(animated: true, completion: nil)
-        }
-        }
-
-/*
- MARK: - Navigation
- 
- In a storyboard-based application, you will often want to do a little preparation before navigation
- override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
- Get the new view controller using segue.destination.
- Pass the selected object to the new view controller.
- }
- */
-
-
+    }
+}

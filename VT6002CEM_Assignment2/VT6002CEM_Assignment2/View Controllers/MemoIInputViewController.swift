@@ -16,7 +16,6 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
     
     override func viewDidLoad()
     {
-        
         super.viewDidLoad()
         configureTextFields()
         configuteTapGesture()
@@ -44,7 +43,6 @@ class MemoIInputViewController: UIViewController, UITextFieldDelegate, UITextVie
         print("handle tap was called")
         view.endEditing(true)
     }
-    
     
     @IBAction func saveAction(_ sender: Any)
     {
