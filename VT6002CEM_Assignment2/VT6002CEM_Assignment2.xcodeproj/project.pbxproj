@@ -226,8 +226,8 @@
 				3E15684A278B22960044B205 /* Kam Wah Cafe & Bakery.jpeg */,
 				3E15684C278B24AA0044B205 /* ShuiKeeCoffee.jpeg */,
 				3E15684E278B275A0044B205 /* 茶王冰室.jpg */,
-				3E156850278B2EFA0044B205 /* 九龍城樂園.jpeg */,
 				3E156852278B363F0044B205 /* Honolulu CoffeeShop.jpg */,
+				3E156850278B2EFA0044B205 /* 九龍城樂園.jpeg */,
 			);
 			path = Image;
 			sourceTree = "<group>";

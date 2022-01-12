@@ -21,7 +21,6 @@ class FaceIDViewController: UIViewController {
     
     override func viewDidLoad() {
         self.notifyUser("Welcome", err: "Please Use Biometrics sensor to enter the memo")
-        
         super.viewDidLoad()
     }
     
@@ -79,16 +78,5 @@ class FaceIDViewController: UIViewController {
     }
     
     
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
