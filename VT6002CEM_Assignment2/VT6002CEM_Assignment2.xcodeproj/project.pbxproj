@@ -19,7 +19,6 @@
 		3E168716278B20130008805D /* 金鳳茶餐廳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E168715278B20130008805D /* 金鳳茶餐廳.jpg */; };
 		3E168718278B20510008805D /* 金寶冰廳.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E168717278B20510008805D /* 金寶冰廳.jpg */; };
 		3E218A66278305890092EA20 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A65278305890092EA20 /* WebViewController.swift */; };
-		3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */; };
 		3E4C5D67278C4A8400045F73 /* SettingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4C5D66278C4A8400045F73 /* SettingPageViewController.swift */; };
 		3E5CA1982783535D00BE9913 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1972783535D00BE9913 /* SignUpViewController.swift */; };
 		3E5CA19A2783537100BE9913 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5CA1992783537100BE9913 /* LoginViewController.swift */; };
@@ -103,7 +102,6 @@
 		3E168715278B20130008805D /* 金鳳茶餐廳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "金鳳茶餐廳.jpg"; sourceTree = "<group>"; };
 		3E168717278B20510008805D /* 金寶冰廳.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "金寶冰廳.jpg"; sourceTree = "<group>"; };
 		3E218A65278305890092EA20 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MilkTeaMapViewController.swift; sourceTree = "<group>"; };
 		3E4C5D66278C4A8400045F73 /* SettingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingPageViewController.swift; sourceTree = "<group>"; };
 		3E5CA1972783535D00BE9913 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3E5CA1992783537100BE9913 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				3E4C5D66278C4A8400045F73 /* SettingPageViewController.swift */,
-				3E218A6D27830AE70092EA20 /* MilkTeaMapViewController.swift */,
 				3E218A65278305890092EA20 /* WebViewController.swift */,
 				3E5CA19C278353A200BE9913 /* MainPageViewController.swift */,
 				3E8EC3F2277DCAD70021818C /* ViewController.swift */,
@@ -476,7 +473,6 @@
 				3E8EC3EF277DCAD70021818C /* AppDelegate.swift in Sources */,
 				3E8EC3F1277DCAD70021818C /* SceneDelegate.swift in Sources */,
 				3E5CA19A2783537100BE9913 /* LoginViewController.swift in Sources */,
-				3E218A6E27830AE70092EA20 /* MilkTeaMapViewController.swift in Sources */,
 				3E218A66278305890092EA20 /* WebViewController.swift in Sources */,
 				3E5CA19D278353A200BE9913 /* MainPageViewController.swift in Sources */,
 				3E5D2CE6278C223D005A6E70 /* MemoNavViewController.swift in Sources */,
